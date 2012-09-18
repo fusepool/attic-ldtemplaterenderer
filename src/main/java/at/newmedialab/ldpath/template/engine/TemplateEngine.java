@@ -110,7 +110,7 @@ public class TemplateEngine<Node> {
     }
 
 
-    private void processTemplate(Node context, Template template, Map initialEnv, Writer out) throws IOException, TemplateException {
+    public void processTemplate(Node context, Template template, Map initialEnv, Writer out) throws IOException, TemplateException {
         Map root = new HashMap();
 
         if(initialEnv != null) {

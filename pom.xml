@@ -27,12 +27,12 @@
   </parent>
 
   <groupId>org.apache.stanbol</groupId>
-  <artifactId>org.apache.stanbol.commons.ldpathex</artifactId>
+  <artifactId>org.apache.stanbol.commons.ldpathtemplate</artifactId>
   <version>0.10.0-incubating-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
-  <name>Apache Stanbol LDPath template example</name>
-  <description>ldpath experiments</description>
+  <name>Apache Stanbol LDPath template service</name>
+  <description>A service providing ldpath template redering</description>
   <scm>
     <connection>
       scm:svn:http://svn.apache.org/repos/asf/incubator/stanbol/trunk/commons/usermanagement
