@@ -1,4 +1,4 @@
-usermanager
+LDPath template rendering service
 ===========
 
-a usermanager for stanbol 
+Provides a service to render GraphNodes using an LDPath template
