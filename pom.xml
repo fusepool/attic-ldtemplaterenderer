@@ -35,10 +35,10 @@
   <description>A service providing ldpath template redering</description>
   <scm>
     <connection>
-      scm:svn:http://svn.apache.org/repos/asf/incubator/stanbol/trunk/commons/usermanagement
+      scm:svn:http://svn.apache.org/repos/asf/stanbol/trunk/commons/ldpathtemplate
     </connection>
     <developerConnection>
-      scm:svn:https://svn.apache.org/repos/asf/incubator/stanbol/trunk/commons/usermanagement
+      scm:svn:https://svn.apache.org/repos/asf/stanbol/trunk/commons/ldpathtemplate
     </developerConnection>
     <url>http://incubator.apache.org/stanbol/</url>
   </scm>

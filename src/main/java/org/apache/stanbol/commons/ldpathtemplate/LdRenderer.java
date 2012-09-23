@@ -27,6 +27,11 @@ import at.newmedialab.ldpath.template.engine.TemplateEngine;
 import freemarker.cache.TemplateLoader;
 import freemarker.template.TemplateException;
 
+/**
+ * This service renders a GraphNode to a Writer given the 
+ * path of an ldpath template
+ *
+ */
 @Component
 @Service(LdRenderer.class)
 public class LdRenderer {
@@ -104,9 +109,17 @@ public class LdRenderer {
 		return bundle.getResource(TEMPLATES_PATH_IN_BUNDLES) != null;
 	}
 
+	/**
+	 * Renders a GraphNode with a template located in the templates
+	 * folder of any active bundle
+	 * 
+	 * @param node the GraphNode to be rendered
+	 * @param templatePath the freemarker path to the template
+	 * @param out where the result is written to
+	 */
 	public void render(GraphNode node, final String templatePath, Writer out) {	
 		//A GraphNode backend could be graph unspecific, so the same engine could be
-		//resued, possibly being signifantly more performant (caching, etc.)
+		//reused, possibly being signifantly more performant (caching, etc.)
 		RDFBackend<Resource> backend = new ClerezzaBackend(node.getGraph());
 		Resource context = node.getNode();
 		TemplateEngine<Resource> engine = new TemplateEngine<Resource>(backend);
